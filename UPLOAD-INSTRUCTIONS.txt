@@ -1,0 +1,10 @@
+SOKOLSKI CONCRETING WEBSITE
+
+Upload BOTH of these to the root of the GitHub repository:
+1. index.html
+2. the entire images folder
+
+Do not upload only index.html or the photos will not appear.
+
+Phone number: 0439 851 000
+Service area: Hobart and surrounding areas

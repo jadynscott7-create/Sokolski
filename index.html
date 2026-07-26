@@ -296,6 +296,14 @@
 <div class="lightbox" id="lightbox"><button aria-label="Close">×</button><img alt=""></div>
 
 <script>
+
+  // Always open the page at the top instead of restoring the previous scroll position.
+  if ('scrollRestoration' in history) history.scrollRestoration = 'manual';
+  window.addEventListener('pageshow', () => {
+    if (location.hash) history.replaceState(null, '', location.pathname + location.search);
+    window.scrollTo(0, 0);
+  });
+
   const topbar=document.getElementById('topbar');
   addEventListener('scroll',()=>topbar.classList.toggle('scrolled',scrollY>30));
   document.getElementById('year').textContent=new Date().getFullYear();
